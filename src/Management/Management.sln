@@ -85,6 +85,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Steeltoe.Discovery.Abstract
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Steeltoe.Common.Abstractions", "..\Common\src\Abstractions\Steeltoe.Common.Abstractions.csproj", "{282B2292-7D12-48DF-A25D-509B79B9FDE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "..\..\..\Samples\Management\src\AspDotNet4\WebApplication1\WebApplication1.csproj", "{3D23FC24-0A9C-4EBA-826C-6A590ED318A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -211,6 +213,10 @@ Global
 		{282B2292-7D12-48DF-A25D-509B79B9FDE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{282B2292-7D12-48DF-A25D-509B79B9FDE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{282B2292-7D12-48DF-A25D-509B79B9FDE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D23FC24-0A9C-4EBA-826C-6A590ED318A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D23FC24-0A9C-4EBA-826C-6A590ED318A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D23FC24-0A9C-4EBA-826C-6A590ED318A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D23FC24-0A9C-4EBA-826C-6A590ED318A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
