@@ -6,16 +6,9 @@
     <AssemblyName>Steeltoe.Management.EndpointBase</AssemblyName>
     <PackageId>Steeltoe.Management.EndpointBase</PackageId>
     <PackageTags>Spring Cloud;Actuator;Management;Monitoring</PackageTags>
+    <Version>2.4.2-ca2</Version>
   </PropertyGroup>
   <Import Project="..\..\..\..\sharedproject.props" />
-
-  <ItemGroup Condition="'$(CI_BUILD)' == ''">
-    <ProjectReference Include="..\..\..\Common\src\Common\Steeltoe.Common.csproj" />
-    <ProjectReference Include="..\..\..\Common\src\Common.Http\Steeltoe.Common.Http.csproj" />
-    <ProjectReference Include="..\..\..\Logging\src\DynamicLogger\Steeltoe.Extensions.Logging.DynamicLogger.csproj" />
-    <ProjectReference Include="..\Diagnostics\Steeltoe.Management.Diagnostics.csproj" />
-    <ProjectReference Include="..\OpenCensusBase\Steeltoe.Management.OpenCensusBase.csproj" />
-  </ItemGroup>
   
   <ItemGroup Condition="'$(CI_BUILD)' == 'True'">
     <PackageReference Include="Steeltoe.Common" Version="$(SteeltoeVersion)$(SteeltoeVersionSuffix)" />
@@ -31,6 +24,12 @@
     
     <PackageReference Include="Microsoft.DiaSymReader" Version="$(SymReaderVersion)" />
     <PackageReference Include="Microsoft.DiaSymReader.PortablePdb" Version="$(SymReaderPortableVersion)" />
+    <PackageReference Include="Steeltoe.Common" Version="2.4.2" />
+    <PackageReference Include="Steeltoe.Common.Http" Version="2.4.2" />
+    <PackageReference Include="Steeltoe.Extensions.Logging.DynamicLogger" Version="2.4.2" />
+    <PackageReference Include="Steeltoe.Management.Diagnostics" Version="2.4.2" />
+    <PackageReference Include="Steeltoe.Management.OpenCensus" Version="2.4.2" />
+    <PackageReference Include="Steeltoe.Management.OpenCensusBase" Version="2.4.2" />
     <PackageReference Include="System.IO.FileSystem.DriveInfo" Version="$(DriveInfoVersion)" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
