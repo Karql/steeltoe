@@ -45,6 +45,11 @@ namespace Steeltoe.Management.EndpointBase
                         contentHeader = AllowedAcceptHeaders(version)
                             .FirstOrDefault(header => acceptHeader == header);
                     }
+
+                    if (!string.IsNullOrEmpty(contentHeader))
+                    {
+                        break;
+                    }
                 }
             }
 
